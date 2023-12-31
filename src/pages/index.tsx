@@ -359,8 +359,8 @@ function displayUnicodeList(unicodeList: Array<string>): JSX.Element {
         <th>Charactor</th>
         <th>Block</th>
       </tr>
-      {unicodeList.map((unicode) => (
-        <tr>
+      {unicodeList.map((unicode, index) => (
+        <tr key={index.toString()}>
           <td>{`U+${unicode.codePointAt(0)?.toString(16)}`}</td>
           <td className="text-center">{unicode}</td>
           <td>{getUnicodeBlock(unicode)?.name}</td>
