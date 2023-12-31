@@ -261,7 +261,7 @@ export default function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
-      <h1 className="text-5xl">Grapheme Breaker</h1>
+      <h1 className="text-5xl">Grapheme Highlighter</h1>
       <textarea
         value={input}
         cols={50}
